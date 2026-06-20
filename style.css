@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0b1020,
+        #141b34,
+        #1d2847
+    );
+}
+
+.container{
+    width: 700px;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 0 30px rgba(0,229,255,0.15);
+}
+
+h1{
+    text-align: center;
+
+    font-size: 3rem;
+
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #ff4d6d
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: center;
+
+    color: #94a3b8;
+
+    margin-bottom: 25px;
+}
+
+#errorInput{
+    width: 100%;
+
+    height: 180px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    outline: none;
+
+    resize: none;
+
+    font-size: 15px;
+}
+
+#errorInput::placeholder{
+    color: #94a3b8;
+}
+
+#analyzeBtn{
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #ff4d6d
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#analyzeBtn:hover{
+    transform: translateY(-2px);
+
+    box-shadow: 0 0 20px rgba(0,229,255,0.3);
+}
+
+#result{
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    min-height: 150px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+#result h2{
+    color: #00e5ff;
+
+    margin-bottom: 10px;
+}
+
+#result p{
+    text-align: left;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+    line-height: 1.6;
+}
+
+#historyList{
+    margin-top: 15px;
+    color: white;
+}
+
+#historyList li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+}
+
+h3{
+    margin-top: 20px;
+    color: #00e5ff;
+}
+
+#clearHistoryBtn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transition: 0.3s;
+}
+
+#clearHistoryBtn:hover{
+    background: rgba(255,255,255,0.2);
+}
